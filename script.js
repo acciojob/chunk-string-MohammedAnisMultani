@@ -1,4 +1,8 @@
 function stringChop(str, size) {
+	if(str == ""){
+		let array = [];
+		return array;
+	}
   let arr = [];
 let i=0;
 while(i<str.length){
@@ -16,4 +20,4 @@ return arr;
 // Do not change the code below
 const str = prompt("Enter String.");
 const size = prompt("Enter Chunk Size.");
-alert(stringChop(str, size));
+alert(stringChop(str, size)); 
