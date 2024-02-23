@@ -1,5 +1,16 @@
 function stringChop(str, size) {
-  // your code here
+  let arr = [];
+let i=0;
+while(i<str.length){
+    let string = ""
+for(var j=i; j<size+i; j++){
+    string += str.charAt(j);
+    
+}
+arr.push(string);
+i=j
+}
+return arr;
 }
 
 // Do not change the code below
